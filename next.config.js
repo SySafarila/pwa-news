@@ -22,6 +22,9 @@ const withPWA = require("next-pwa")({
 
 const nextConfig = {
   reactStrictMode: true,
+  experimental: {
+    scrollRestoration: true,
+  },
 };
 
 module.exports = withPWA({
