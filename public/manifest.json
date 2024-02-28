@@ -1,6 +1,6 @@
 {
-  "name": "React PWA",
-  "short_name": "RPWA",
+  "name": "News App PWA",
+  "short_name": "News App PWA",
   "description": "Project ini merupakan tugas dari matakuliah Mobile Programming II semester 8 di Universitas Putra Indonesia",
   "icons": [
     {
@@ -14,46 +14,5 @@
   "background_color": "#FFFFFF",
   "start_url": "/",
   "display": "standalone",
-  "orientation": "portrait",
-  "screenshots": [
-    {
-      "src": "/images/screenshots/login-desktop.png",
-      "sizes": "2048x1684",
-      "type": "image/png",
-      "label": "Login desktop",
-      "form_factor": "wide"
-    },
-    {
-      "src": "/images/screenshots/home-desktop.png",
-      "sizes": "2048x1684",
-      "type": "image/png",
-      "label": "Home desktop",
-      "form_factor": "wide"
-    },
-    {
-      "src": "/images/screenshots/login.png",
-      "sizes": "1170x2532",
-      "type": "image/png",
-      "label": "Login"
-    },
-    {
-      "src": "/images/screenshots/home.png",
-      "sizes": "1170x2532",
-      "type": "image/png",
-      "label": "Home"
-    }
-  ],
-  "shortcuts": [
-    {
-      "name": "Developer Portfolio",
-      "url": "/redirect?to=https://www.sysafarila.my.id",
-      "icons:": [
-        {
-          "src": "https://pwa.sysafarila.my.id/icons/sysafarila.png",
-          "type": "image/png",
-          "sizes": "192x192"
-        }
-      ]
-    }
-  ]
+  "orientation": "portrait"
 }
