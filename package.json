@@ -19,6 +19,7 @@
     "sweetalert2": "^11.10.5"
   },
   "devDependencies": {
+    "@types/next-pwa": "^5.6.9",
     "@types/react": "^18.2.58",
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
