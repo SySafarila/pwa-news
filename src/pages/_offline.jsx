@@ -1,23 +1,16 @@
 import useOnline from "@/hooks/useOnline";
-import { userState } from "@/utilities/recoil";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import { useRecoilValue } from "recoil";
 
 const Offline = () => {
   const isOnline = useOnline();
-  const user = useRecoilValue(userState);
   const router = useRouter();
 
   useEffect(() => {
     if (isOnline == true) {
       setTimeout(() => {
-        if (user) {
-          router.push("/");
-        } else {
-          router.push("/login");
-        }
+        router.push("/");
       }, 3000);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
