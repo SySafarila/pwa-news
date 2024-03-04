@@ -1,6 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import axios from "axios";
 import { useEffect } from "react";
+import shareIcon from "../../../public/icons/share.svg";
+import Image from "next/image";
 
 const NewsDetail = ({ post }) => {
   const sharedDataSample = {
@@ -26,7 +28,7 @@ const NewsDetail = ({ post }) => {
       console.log("share success");
     } catch (error) {
       // console.error(error);
-      alert("Gabisa di share bang");
+      // alert("Gabisa di share bang");
     }
   };
 
@@ -50,8 +52,8 @@ const NewsDetail = ({ post }) => {
       />
       <div className="border rounded p-4">{post.body}</div>
       <div className="flex justify-end">
-        <button className="bg-gray-200 px-4 py-2 rounded" onClick={shareData}>
-          SHARE
+        <button className="bg-gray-200 p-3 rounded-full" onClick={shareData}>
+          <Image src={shareIcon} alt="share icon" />
         </button>
       </div>
     </div>
