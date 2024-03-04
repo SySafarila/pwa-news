@@ -9,7 +9,7 @@ const withPWA = require("next-pwa")({
 
 /** @type {import('next').NextConfig} */
 const nextConfig = withPWA({
-  reactStrictMode: true,
+  reactStrictMode: process.env.NODE_ENV === "development" ? false : true,
   experimental: {
     scrollRestoration: true,
   },
